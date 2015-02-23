@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = matrix()) {
   
   inv <- function() {
     if (!identical(x, y)) {
-      y <- solve(x)
+      y <<- solve(x)
     }
     return(y)
   } 
